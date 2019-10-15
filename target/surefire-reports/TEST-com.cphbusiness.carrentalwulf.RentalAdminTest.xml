@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.cphbusiness.carrentalwulf.RentalAdminTest" time="0.003" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.cphbusiness.carrentalwulf.RentalAdminTest" time="0.207" tests="2" errors="1" skipped="0" failures="1">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
-    <property name="java.specification.version" value="11"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/Users/thor/NetBeansProjects/CarRentalWulf/target/test-classes:/Users/thor/NetBeansProjects/CarRentalWulf/target/classes:/Users/thor/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/thor/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -11,55 +12,96 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="user.timezone" value=""/>
-    <property name="java.vm.specification.version" value="11"/>
+    <property name="java.vm.specification.version" value="1.8"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="DK"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/thor/NetBeansProjects/CarRentalWulf/target/surefire/surefirebooter6995218240600038488.jar /Users/thor/NetBeansProjects/CarRentalWulf/target/surefire 2019-10-10T22-46-36_672-jvmRun1 surefire16095529987724949295tmp surefire_017711019741824222291tmp"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/thor/NetBeansProjects/CarRentalWulf/target/surefire/surefirebooter5925639257856297895.jar /Users/thor/NetBeansProjects/CarRentalWulf/target/surefire 2019-10-15T10-11-47_422-jvmRun1 surefire3362346421857513875tmp surefire_04796729921066896561tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="jdk.debug" value="release"/>
+    <property name="test" value="com.cphbusiness.carrentalwulf.RentalAdminTest"/>
     <property name="surefire.test.class.path" value="/Users/thor/NetBeansProjects/CarRentalWulf/target/test-classes:/Users/thor/NetBeansProjects/CarRentalWulf/target/classes:/Users/thor/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/thor/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/thor"/>
-    <property name="user.language" value="en"/>
+    <property name="user.language" value="da"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2019-01-15"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home"/>
-    <property name="file.separator" value="/"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre"/>
     <property name="basedir" value="/Users/thor/NetBeansProjects/CarRentalWulf"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="file.separator" value="/"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/thor/NetBeansProjects/CarRentalWulf/target/surefire/surefirebooter6995218240600038488.jar"/>
+    <property name="surefire.real.class.path" value="/Users/thor/NetBeansProjects/CarRentalWulf/target/surefire/surefirebooter5925639257856297895.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="11.0.2+9"/>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
     <property name="user.name" value="thor"/>
     <property name="path.separator" value=":"/>
     <property name="os.version" value="10.14.6"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="18.9"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/Applications/netbeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
     <property name="localRepository" value="/Users/thor/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/y9/q16tg7w95wq78w0jlp5g7xkc0000gn/T/"/>
-    <property name="java.version" value="11.0.2"/>
+    <property name="java.version" value="1.8.0_221"/>
     <property name="user.dir" value="/Users/thor/NetBeansProjects/CarRentalWulf"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.library.path" value="/Users/thor/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.vm.version" value="11.0.2+9"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="java.ext.dirs" value="/Users/thor/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="java.class.version" value="55.0"/>
+    <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testSomeMethod" classname="com.cphbusiness.carrentalwulf.RentalAdminTest" time="0.002"/>
+  <testcase name="testCreateCarsFromFile" classname="com.cphbusiness.carrentalwulf.RentalAdminTest" time="0.012">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.cphbusiness.carrentalwulf.RentalAdminTest.testCreateCarsFromFile(RentalAdminTest.java:57)
+</error>
+    <system-out><![CDATA[createCarsFromFile
+]]></system-out>
+  </testcase>
+  <testcase name="testSomeMethod" classname="com.cphbusiness.carrentalwulf.RentalAdminTest" time="0.051">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at com.cphbusiness.carrentalwulf.RentalAdminTest.testSomeMethod(RentalAdminTest.java:45)
+</failure>
+    <system-out><![CDATA[REG: AB224532 BIL: Acura KMPRL: 0
+CARREG: AB224532 BIL: Acura KMPRL: 0
+REG: AB444532 BIL: Acura KMPRL: 0
+CARREG: AB444532 BIL: Acura KMPRL: 0
+REG: AB614532 BIL: Audi KMPRL: 0
+CARREG: AB614532 BIL: Audi KMPRL: 0
+REG: AB834532 BIL: Audi KMPRL: 0
+CARREG: AB834532 BIL: Audi KMPRL: 0
+REG: AB004532 BIL: Audi KMPRL: 0
+CARREG: AB004532 BIL: Audi KMPRL: 0
+REG: AB224532 BIL: BMW KMPRL: 0
+CARREG: AB224532 BIL: BMW KMPRL: 0
+REG: AB444532 BIL: BMW KMPRL: 0
+CARREG: AB444532 BIL: BMW KMPRL: 0
+REG: AB614532 BIL: Buick KMPRL: 0
+CARREG: AB614532 BIL: Buick KMPRL: 0
+REG: AB834532 BIL: Buick KMPRL: 0
+CARREG: AB834532 BIL: Buick KMPRL: 0
+REG: AB224532 BIL: BMW KMPRL: 0
+REG: AB224532 BIL: BMW KMPRL: 0
+REG: AB834532 BIL: Buick KMPRL: 0
+REG: AB834532 BIL: Buick KMPRL: 0
+REG: AB614532 BIL: Buick KMPRL: 0
+REG: AB614532 BIL: Buick KMPRL: 0
+REG: AB444532 BIL: BMW KMPRL: 0
+REG: AB444532 BIL: BMW KMPRL: 0
+REG: AB004532 BIL: Audi KMPRL: 0
+REG: AB004532 BIL: Audi KMPRL: 0
+]]></system-out>
+  </testcase>
 </testsuite>

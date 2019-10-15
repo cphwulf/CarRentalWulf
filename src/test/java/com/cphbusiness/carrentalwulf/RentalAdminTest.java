@@ -8,7 +8,9 @@ package com.cphbusiness.carrentalwulf;
 import java.io.FileNotFoundException;
 import org.junit.Before;
 import org.junit.Test;
+import java.util.HashMap;
 import static org.junit.Assert.*;
+	
 
 /**
  *
@@ -18,6 +20,8 @@ public class RentalAdminTest {
 	RentalAdmin rentalAdmin;
 	CarFactory myCarFactory;
 	String filename;
+	HashMap<String, Car> myCars;
+	
 
 	
 	public RentalAdminTest() {
@@ -27,17 +31,32 @@ public class RentalAdminTest {
 	public void setUp() {
 		rentalAdmin = new RentalAdmin("kurt");
 		myCarFactory = new CarFactory();
-		filename = "ncars4.csv";
-//		filename = "/Users/thor/NetBeansProjects/CarRentalWulf/src/main/java/com/cphbusiness/carrentalwulf/ncars4.csv";
-		filename = "/var/lib/jenkins/workspace/CarRentalWulf/src/main/java/com/cphbusiness/carrentalwulf/ncars4.csv";
+		
+		filename = "data/ncars4.csv";
+//		filename = "/var/lib/jenkins/workspace/CarRentalWulf/src/main/java/com/cphbusiness/carrentalwulf/ncars4.csv";
 
 	}
 
 	@Test
 	public void testSomeMethod() throws FileNotFoundException {
-		boolean found = rentalAdmin.createCarsFromFile(filename);
-		boolean expected = true;
+		HashMap<String, Car> foundCars = rentalAdmin.createCarsFromFile(filename);
+		int expected = 10;
+		int found = foundCars.size();
 		assertTrue(found==expected);
+	}
+
+	/**
+	 * Test of createCarsFromFile method, of class RentalAdmin.
+	 */
+	@Test
+	public void testCreateCarsFromFile() throws Exception {
+		System.out.println("createCarsFromFile");
+		String filename = "";
+		RentalAdmin instance = null;
+		HashMap<String, Car> expResult = null;
+		HashMap<String, Car> result = instance.createCarsFromFile(filename);
+		assertEquals(expResult, result);
+		fail("The test case is a prototype.");
 	}
 	
 }
